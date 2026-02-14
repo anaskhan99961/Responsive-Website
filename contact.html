@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anas Khan | Contact</title>
+  <meta name="description" content="Contact Anas Khan for collaboration and software development opportunities." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a class="brand" href="index.html">Anas Khan</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="siteNav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a class="active" href="contact.html">Contact</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light mode">
+        <span class="theme-icon" aria-hidden="true">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="section container">
+    <section class="reveal">
+      <h1>Contact</h1>
+      <p>
+        Feel free to connect with me for internships, freelance opportunities, or project collaboration.
+      </p>
+    </section>
+
+    <section class="section contact-grid">
+      <article class="card reveal">
+        <h2>Contact Details</h2>
+        <p><strong>Name:</strong> Anas Khan</p>
+        <p><strong>Email:</strong> anaskhan99961@gmail.com</p>
+        <p><strong>Location:</strong> Hyderabad, Sindh, Pakistan</p>
+      </article>
+
+      <article class="card reveal">
+        <h2>Send a Message</h2>
+        <form class="contact-form" action="#" method="post">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button class="btn primary" type="submit">Send Message</button>
+        </form>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; <span id="year"></span> Anas Khan. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://github.com/anaskhan99961" aria-label="GitHub profile">GitHub</a>
+        <a href="https://www.linkedin.com/in/muhammad-anas-khan-817954249/" aria-label="LinkedIn profile">LinkedIn</a>
+        <a href="https://x.com/anaskha84631891?s=21" aria-label="Twitter profile">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
