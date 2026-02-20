@@ -687,3 +687,103 @@ main .section:first-child {
   }
 }
 
+
+/* ===== SERVICES & PROJECT CARDS ===== */
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  position: relative;
+}
+
+.section h2::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: var(--primary);
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 10px;
+}
+
+.card {
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 0;
+}
+
+.card:hover::before {
+  opacity: 0.05;
+}
+
+.card h3 {
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+  position: relative;
+  z-index: 1;
+}
+
+.card p,
+.card a {
+  position: relative;
+  z-index: 1;
+}
+
+.text-link {
+  display: inline-block;
+  margin-top: 0.8rem;
+  font-weight: 600;
+  transition: transform 0.3s ease;
+}
+
+.text-link:hover {
+  transform: translateX(6px);
+}
+
+/* ===== CLIENT REVIEWS ===== */
+
+.review-card {
+  text-align: center;
+  padding: 1.8rem 1.4rem;
+  position: relative;
+}
+
+.review-text {
+  font-style: italic;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.review-stars {
+  color: gold;
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  letter-spacing: 3px;
+}
+
+.review-user h4 {
+  margin-bottom: 0.2rem;
+  font-size: 1rem;
+}
+
+.review-user span {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* Hover Effect */
+.review-card:hover {
+  transform: translateY(-8px);
+}
+
